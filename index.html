@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna eletronica</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body style="display: none;">
+    <h1></h1>
+    <div class="main">
+        
+        <div class="urna">
+            <div class="tela mov">
+                <div class="esquerda">
+
+                </div>
+            </div>
+
+
+            <div class="teclado mov">
+                <div class="log">
+                    <img src="img/brasao.png" alt="Brasão da República">
+                    <h2>JUSTIÇA ELEITORAL</h2>
+                </div>
+                <div class="teclado-num">
+                    <div class="btn-num">
+                        <div class="btn-click">1</div>
+                        <div class="btn-click">2</div>
+                        <div class="btn-click">3</div>
+                    </div>
+                    <div class="btn-num">
+                        <div class="btn-click">4</div>
+                        <div class="btn-click">5</div>
+                        <div class="btn-click">6</div>
+                    </div>
+                    <div class="btn-num">
+                        <div class="btn-click">7</div>
+                        <div class="btn-click">8</div>
+                        <div class="btn-click">9</div>
+                    </div>
+                    <div class="btn-num">
+                        <div class="btn-click">0</div>
+                    </div>
+                    <div class="btn-comfima">
+                        <div class="btn-final branco">BRANCO</div>
+                        <div class="btn-final corrige">CORRIGE</div>
+                        <div class="btn-final comfirma">COMFIRMA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <input type="hidden" id="resultado">
+    <input type="hidden" id="tipo" value="1">
+    <input type="hidden" id="completo">
+
+    <audio id="curto">
+        <source src="sons/bip-curto.mp3">
+    </audio>
+
+    <audio id="longo">
+        <source src="sons/fim.mp3">
+    </audio>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

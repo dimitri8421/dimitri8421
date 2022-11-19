@@ -1,0 +1,449 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    max-width: 85%;
+    margin: 0 auto !important;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.urna {
+    display: flex;
+    padding: 5px 16px;
+    border-right: 10px outset;
+    border-left: 10px inset;
+    border-top: 73px outset;
+    height: 27em;
+    background: rgb(197 193 193);
+    display: flex;
+    border-radius: 5px;
+}
+
+.mov {
+    margin: 3px 1.5em;
+}
+
+.tela {
+    margin: 2em;
+    position: relative;
+    width: 32em;
+    border: 6px inset;
+    background: #ffffff;
+}
+
+.teclado {
+    width: 21em;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.log {
+    padding: 0 6px;
+    background: #ededed;
+    display: flex;
+    align-items: center;
+
+}
+
+.teclado-num {
+    background: #342f2f;
+    height: 100%;
+    padding: 8px;
+    border: 4px outset;
+}
+
+.btn-click {
+    padding: 8px 18px;
+    font-size: 24px;
+    background: black;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    margin: 8px;
+    box-shadow: 5px -5px 1px #222222;
+}
+
+.btn-num {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+h2 {
+    margin-left: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #444444;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+img {
+    max-width: 60px;
+    filter: grayscale();
+}
+
+.btn-comfima {
+    display: flex;
+}
+
+.btn-final {
+    padding: 2px 2px;
+    margin: 0 8px;
+    height: 1.8em;
+    border-radius: 3px;
+    box-shadow: 4px -4px 1px #524747;
+    font-weight: 100;
+    align-self: flex-end;
+    font-family: monospace;
+    font-size: 19px;
+}
+
+.branco {
+    background: white;
+}
+
+.corrige {
+    background: #d32e2e;
+}
+
+.comfirma {
+    background: green;
+    padding-top: 4px;
+    height: 49px;
+}
+
+.btn-click:active,
+.btn-final:active {
+    box-shadow: 4px 1px 1px #222222
+}
+
+.title {
+    padding-top: 30px;
+    padding-right: 75px;
+}
+
+.preencher {
+    display: flex;
+    padding: 0 70px;
+}
+
+.quadrado {
+    height: 42px;
+    width: 31px;
+    margin: 1px;
+    border: 2px solid gray;
+    text-align: center;
+    font-size: xx-large;
+    font-family: sans-serif;
+}
+
+.pisca {
+    animation: animate 2s cubic-bezier(0, 0, 0, 1.68) infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.texto {
+    position: absolute;
+    left: 7px;
+    top: 7.4em;
+}
+
+.mini {
+    font-weight: 200;
+}
+
+.none {
+    display: none;
+}
+
+.gif {
+    background: url(../img/depEstadual.gif);
+    background-size: 168px;
+    height: 160px;
+    width: 146px;
+    background-color: blanchedalmond;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.busca {
+    display: none;
+    /* opacity: 0; */
+}
+
+.busca div {
+    margin: 11px 7px;
+
+}
+
+.res {
+    position: absolute;
+    left: 60px;
+}
+
+.numeroErrado {
+    font-size: 24px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 8em;
+    left: 7px;
+
+}
+
+.voto {
+    font-size: 36px;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 2em;
+    right: 3em;
+    animation: piscaR 1.5s infinite;
+}
+
+@keyframes piscaR {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.imgCandidato {
+    height: 9.9em;
+    width: 7em;
+    position: absolute;
+    top: 0;
+    border-radius: 3px;
+    filter: grayscale(1);
+    right: 0;
+}
+
+.comfirmaVoto {
+    text-align: center;
+    padding: 11px;
+    font-size: 1.7em;
+    font-family: sans-serif;
+    animation: piscaR 1.5s infinite;
+    display: none;
+}
+
+.container {
+    position: absolute;
+    left: 4.4em;
+    top: 11em;
+    width: 103%;
+}
+
+.container .progress-bar {
+    height: 21px;
+    width: 0%;
+    background-color: #007c1b;
+}
+
+.gravando {
+    margin: 9px 127px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.fimTitle {
+    font-size: 9em;
+    font-family: sans-serif;
+    align-items: center;
+    position: absolute;
+    left: 0.8em;
+    top: 0.8em;
+}
+
+.votou {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: sans-serif;
+    font-size: 2em;
+    color: gray;
+}
+
+.fim {
+    display: none;
+}
+
+#cabecalho {
+    font-family: sans-serif;
+    margin: 4px;
+    color: #504b4b;
+}
+
+@media only screen and (max-device-width: 900px) {
+    body {
+        max-width: 77%;
+    }
+
+    .urna {
+        height: 73%;
+        width: 100%;
+        border-right: 6px outset;
+        border-left: 6px inset;
+        border-top: 34px outset;
+    }
+
+    .mov {
+        margin: 1px 0.5em;
+    }
+
+    .tela {
+        width: 100%;
+        border: 3px inset;
+        margin: 0.6em;
+    }
+
+    .teclado {
+        width: 35%;
+    }
+
+    img {
+        max-width: 37px;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .btn-click {
+        font-size: 12px;
+        padding: 3px 12px;
+        box-shadow: 3px -3px 1px #222222;
+        margin: 4px;
+    }
+
+    .btn-final {
+        padding: 2px 2px;
+        margin: 4px 4px;
+        border-radius: 2px;
+        box-shadow: 2px -3px 1px #524747;
+        font-size: 7px;
+        font-weight: bold;
+    }
+
+    .comfirma {
+        padding-top: 2px;
+        height: 24px
+    }
+
+    .gif {
+        background-size: 5em;
+        height: 5em;
+        width: 5em;
+    }
+
+    .quadrado {
+        height: 1.3em;
+        width: 0.8em;
+        margin: 1px;
+        border: 1px solid gray;
+        font-size: 1.1em;
+    }
+
+    .teclado-num {
+        border: 2px outset;
+    }
+
+    .textS {
+        font-size: 7px;
+    }
+
+    .imgCandidato {
+        height: 4.5em;
+        width: 3.3em;
+    }
+
+    .busca div {
+        margin: 9px 7px;
+    }
+
+    .res {
+        left: 39px;
+    }
+
+    .preencher {
+        padding: 0 45px;
+    }
+
+    .texto {
+        top: 10.7em;
+    }
+
+    .comfirmaVoto {
+        padding: 6px;
+    }
+
+    #cabecalho {
+        font-size: 0.7em;
+    }
+
+    .fimTitle {
+        font-size: 5em;
+        top: 50%;
+        left: 50%;
+        margin: -50px 0 0 -61px;
+    }
+
+    .container {
+        left: 50%;
+        top: 50%;
+        margin: -15px 0 0 -123px;
+    }
+
+    .container .progress-bar {
+        height: 15px;
+    }
+
+    .gravando {
+        margin: 7px 63px;
+    }
+
+    .voto {
+        font-size: 1.3em;
+        bottom: 1.6em;
+    }
+
+    .votou {
+        font-size: 1em;
+    }
+
+    .numeroErrado {
+        font-size: 15px;
+    }
+}
