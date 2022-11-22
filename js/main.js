@@ -15,6 +15,7 @@ const tempo = setInterval(async()=> {
         document.querySelector('.main').style.display = "";
         document.querySelector('footer').style.display = "flex";
         swal.close();
+        toggleFullScreen();
     }
 },500);
 
