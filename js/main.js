@@ -14,6 +14,7 @@ const tempo = setInterval(async()=> {
     } else {
         document.querySelector('.main').style.display = "";
         document.querySelector('footer').style.display = "flex";
+        swal.close();
     }
 },500);
 
