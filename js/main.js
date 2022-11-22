@@ -1,12 +1,12 @@
 exec = 0;
 const tempo = setInterval(async()=> {
     if (window.screen.height > window.screen.width) {
-        if (!document.querySelector('[class="swal2-container swal2-center swal2-backdrop-show"]')) {
+        if (!document.querySelector('.modall1')) {
             document.querySelector('.main').style.display = "none";
             document.querySelector('footer').style.display = "none";
             
-            Swal.fire({
-                html: '<div style="align-items: baseline;margin: 1em;"><div style="font-size: 1.5em;font-family: sans-serif;">Por favor gire a tela do celular</div><img src="img/girar-tela.png" style="height: 34px;padding: 10px;"></div>',
+            modal1 = Swal.fire({
+                html: '<div class="modall1" style="align-items: baseline;margin: 1em;"><div style="font-size: 1.5em;font-family: sans-serif;">Por favor gire a tela do celular</div><img src="img/girar-tela.png" style="height: 34px;padding: 10px;"></div>',
                 showConfirmButton: false,
                 allowOutsideClick: false
             })
@@ -15,12 +15,16 @@ const tempo = setInterval(async()=> {
     } else {
         document.querySelector('.main').style.display = "";
         document.querySelector('footer').style.display = "flex";
-        swal.close();
-        if ((exec == 0)) {
-            document.querySelector('footer').click();
-            exec++;
+        modal1.close();
+        if (!document.querySelector('.modall2')) {
+            Swal.fire({
+                html: "<div class='modall2'>Click em OK para abrir tela cheia</div>",
+                customClass: {
+                    confirmButton: "#1936c1"
+                },
+                allowOutsideClick: false
+            })
         }
-    }
 },500);
 
 function toggleFullScreen() {
