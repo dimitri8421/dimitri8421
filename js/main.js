@@ -1,11 +1,12 @@
 exec = 0;
+modal1 = {};
 const tempo = setInterval(async()=> {
     if (window.screen.height > window.screen.width) {
         if (!document.querySelector('.modall1')) {
             document.querySelector('.main').style.display = "none";
             document.querySelector('footer').style.display = "none";
             
-            window.modal1 = Swal.fire({
+            modal1 = Swal.fire({
                 html: '<div class="modall1" style="align-items: baseline;margin: 1em;"><div style="font-size: 1.5em;font-family: sans-serif;">Por favor gire a tela do celular</div><img src="img/girar-tela.png" style="height: 34px;padding: 10px;"></div>',
                 showConfirmButton: false,
                 allowOutsideClick: false
@@ -15,7 +16,7 @@ const tempo = setInterval(async()=> {
     } else {
         document.querySelector('.main').style.display = "";
         document.querySelector('footer').style.display = "flex";
-        modal1?.close() ?? null;
+        modal1.close?.();
         if (!document.querySelector('.modall2')) {
             if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement ) {  // current working methods
                 Swal.fire({
