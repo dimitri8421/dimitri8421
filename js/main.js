@@ -13,7 +13,7 @@ const tempo = setInterval(async()=> {
 
     } else {
         document.querySelector('.main').style.display = "";
-        document.querySelector('footer').style.display = "none";
+        document.querySelector('footer').style.display = "flex";
     }
 },500);
 
