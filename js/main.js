@@ -17,20 +17,23 @@ const tempo = setInterval(async()=> {
         document.querySelector('.main').style.display = "";
         document.querySelector('footer').style.display = "flex";
         modal1.close?.();
-        if (!document.querySelector('.modall2')) {
-            if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement ) {  // current working methods
-                Swal.fire({
-                    html: "<div class='modall2'>Click em OK para abrir tela cheia</div>",
-                    customClass: {
-                        confirmButton: "#1936c1"
-                    },
-                    allowOutsideClick: false
-                }).then(()=> {
-                    toggleFullScreen();
-                })
-            }
+        if (window.screen.width <= 900) {
+            if (!document.querySelector('.modall2')) {
+                if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement ) {  // current working methods
+                    Swal.fire({
+                        html: "<div class='modall2'>Click em OK para abrir tela cheia</div>",
+                        customClass: {
+                            confirmButton: "#1936c1"
+                        },
+                        allowOutsideClick: false
+                    }).then(()=> {
+                        toggleFullScreen();
+                    })
+                }
 
+            }
         }
+
         
     }
     
