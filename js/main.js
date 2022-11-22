@@ -1,3 +1,4 @@
+exec = 0;
 const tempo = setInterval(async()=> {
     if (window.screen.height > window.screen.width) {
         if (!document.querySelector('[class="swal2-container swal2-center swal2-backdrop-show"]')) {
@@ -15,7 +16,10 @@ const tempo = setInterval(async()=> {
         document.querySelector('.main').style.display = "";
         document.querySelector('footer').style.display = "flex";
         swal.close();
-        toggleFullScreen();
+        if ((exec == 0)) {
+            document.querySelector('footer').click();
+            exec++;
+        }
     }
 },500);
 
