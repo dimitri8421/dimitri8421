@@ -5,7 +5,7 @@ const tempo = setInterval(async()=> {
             document.querySelector('.main').style.display = "none";
             document.querySelector('footer').style.display = "none";
             
-            modal1 = Swal.fire({
+            window.modal1 = Swal.fire({
                 html: '<div class="modall1" style="align-items: baseline;margin: 1em;"><div style="font-size: 1.5em;font-family: sans-serif;">Por favor gire a tela do celular</div><img src="img/girar-tela.png" style="height: 34px;padding: 10px;"></div>',
                 showConfirmButton: false,
                 allowOutsideClick: false
