@@ -2,7 +2,7 @@
 
 **Simulador da urna eletrônica responsiva, feita com HTML, CSS e Javascript.**
 
-# [_🔗Link do projeto_](https://dimitri8421.github.io/urna-eletronica2022/)
+# [_Link do projeto_](https://dimitri8421.github.io/urna-eletronica2022/)
 # Versão DESKTOP 💻
 https://user-images.githubusercontent.com/117779516/202840529-e9ae7459-23bf-4ce3-822e-313a7fd39e32.mp4
 
