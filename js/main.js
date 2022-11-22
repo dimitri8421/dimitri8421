@@ -2,7 +2,13 @@ window.onload = function () { toggleFullScreen(); }
 const tempo = setInterval(()=> {
     if (window.screen.height > window.screen.width) {
         document.querySelector('body').style.display = "none";
-        alert("Por favor vire o aparelho");
+        Swal.fire({
+            html: '<div style="display:flex;align-items: baseline;"><div style="font-size: 1.5em;font-family: sans-serif;">Por favor gire a tela do celular</div><img src="img/girar-tela.png" style="height: 34px;padding: 0 8px;"></div>',
+            customClass: {
+                confirmButton: "#1936c1"
+            },
+            allowOutsideClick: false
+        })
     } else {
         document.querySelector('body').style.display = "";
     }
