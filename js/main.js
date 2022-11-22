@@ -15,7 +15,6 @@ const tempo = setInterval(async()=> {
 
     } else {
         document.querySelector('.main').style.display = "";
-        document.querySelector('footer').style.display = "flex";
         modal1.close?.();
         if (window.screen.width <= 900) {
             if (!document.querySelector('.modall2')) {
@@ -28,10 +27,13 @@ const tempo = setInterval(async()=> {
                         allowOutsideClick: false
                     }).then(()=> {
                         toggleFullScreen();
+                        document.querySelector('footer').style.display = "flex";
                     })
                 }
 
             }
+        } else {
+            document.querySelector('footer').style.display = "flex";
         }
 
         
