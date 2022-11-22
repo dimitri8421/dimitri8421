@@ -26,6 +26,7 @@ body {
     background: rgb(197 193 193);
     display: flex;
     border-radius: 5px;
+    position: fixed;
 }
 
 .mov {
