@@ -6,7 +6,8 @@ const tempo = setInterval(async()=> {
             
             Swal.fire({
                 html: '<div style="align-items: baseline;margin: 1em;"><div style="font-size: 1.5em;font-family: sans-serif;">Por favor gire a tela do celular</div><img src="img/girar-tela.png" style="height: 34px;padding: 10px;"></div>',
-                showConfirmButton: false
+                showConfirmButton: false,
+                allowOutsideClick: false
             })
         }
 
