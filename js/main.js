@@ -1,3 +1,4 @@
+window.onload = function () { toggleFullScreen(); } 
 const tempo = setInterval(()=> {
     if (window.screen.height > window.screen.width) {
         document.querySelector('body').style.display = "none";
@@ -31,7 +32,7 @@ function toggleFullScreen() {
     }
   }
 }
-toggleFullScreen();
+
 function dois_digitos(numero) { return numero <= 9 ? '0' + numero.toString() : numero.toString(); }
 var dias_semana = ['DOM', 'SEG', 'TER', 'QUA', 'QUI', 'SEX', 'S&Aacute;B'];
 function exibir_relogio() {
