@@ -1,4 +1,3 @@
-window.onload = function () { toggleFullScreen(); } 
 const tempo = setInterval(()=> {
     if (window.screen.height > window.screen.width) {
         document.querySelector('body').style.display = "none";
