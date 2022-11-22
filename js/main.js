@@ -27,6 +27,7 @@ const tempo = setInterval(async()=> {
                 toggleFullScreen();
             })
         }
+    
 },500);
 
 function toggleFullScreen() {
