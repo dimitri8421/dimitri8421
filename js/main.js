@@ -19,6 +19,7 @@ const tempo = setInterval(async()=> {
         if (window.screen.width <= 900) {
             if (!document.querySelector('.modall2')) {
                 if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement ) {  // current working methods
+                    document.querySelector('footer').style.display = "none";
                     Swal.fire({
                         html: "<div class='modall2'>Click em OK para abrir tela cheia</div>",
                         customClass: {
