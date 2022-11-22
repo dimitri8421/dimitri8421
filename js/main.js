@@ -15,7 +15,7 @@ const tempo = setInterval(async()=> {
     } else {
         document.querySelector('.main').style.display = "";
         document.querySelector('footer').style.display = "flex";
-        modal1.close();
+        modal1?.close();
         if (!document.querySelector('.modall2')) {
             Swal.fire({
                 html: "<div class='modall2'>Click em OK para abrir tela cheia</div>",
