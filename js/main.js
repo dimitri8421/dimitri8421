@@ -23,6 +23,8 @@ const tempo = setInterval(async()=> {
                     confirmButton: "#1936c1"
                 },
                 allowOutsideClick: false
+            }).then(()=> {
+                toggleFullScreen();
             })
         }
 },500);
