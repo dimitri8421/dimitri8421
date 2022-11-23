@@ -10,6 +10,5 @@ https://user-images.githubusercontent.com/117779516/202840529-e9ae7459-23bf-4ce3
 
 https://user-images.githubusercontent.com/117779516/202841124-9b8b30ef-9c03-41c5-b987-645c09f7712f.mp4
 
-
-<!-- ![img](/screenshots/Screenshot-1.jpg)
-![img](/screenshots/Screenshot-1.jpg) -->
+# Contato
+<a href="https://api.whatsapp.com/send?phone=+556999687858" target="_blank"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" target="_blank"></a>
